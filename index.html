@@ -5,44 +5,128 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Immersion</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style type="text/css">
+        a {
+            color: white;
+        }
+        
+        #video {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+        
+        #video-overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: white;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        #logo>* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        #grid {
+            padding: 5%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 1fr 60px;
+            grid-template-rows: auto 20%;
+            justify-items: stretch;
+            align-items: stretch;
+        }
+        
+        .container {
+            padding: 5% 5%;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+        
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <video src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" width="100%" height="100%" autoplay="" muted="" loop="">
-        Your browser does not support the video tag.
-    </video>
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 100px">
-        <img class="d-inline" src="assets/img/logo.svg">
-        <p class="d-inline" style="font-size: 30px;padding: 10px;">IMMERSION</p>
-        <div class="float-right"><i class="fa fa-search" style="font-size: 32px;padding: 10px;"></i><i class="fa fa-bars" style="font-size: 32px;padding: 10px;"></i></div>
-        <div style="padding-top: 700px">
-            <h1 style="color: rgb(255,255,255);">A Transformative Education Experience</h1><a href="#" style="color: rgb(255,255,255);">LEARN MORE</a><i class="fa fa-long-arrow-down float-right" style="color: rgb(255,255,255);"></i></div>
-    </div>
-    <div class="text-center">
-        <h1 style="padding: 100px 0;font-weight: 750;">Design Thinking courses taught by Stanford entrepreneurs.</h1>
-    </div>
-    <div style="background-color: #f6efff;padding: 80px;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center">600+</h1>
-                    <p style="font-size: 30px;">Immersion alumni all over the world. Many have started companies and gone on to attend top universities.<br></p>
+    <div id="video-box">
+        <video id="video" src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" autoplay muted loop>
+            Your browser does not support the video tag.
+        </video>
+
+        <div id="video-overlay">
+            <div id="grid">
+                <div id="logo">
+                    <img src="assets/img/logo.svg">
+                    <h2 style="padding: 0 10px;">IMMERSION</h2>
                 </div>
-                <div class="col">
-                    <h1 class="text-center">#1</h1>
-                    <p style="font-size: 30px;">Once again, Creativity was listed as the ‘most important soft skill in the workplace’ by LinkedIn (2020).<br></p>
+                <div class="right">
+                    <i style="padding: 0 5px;" class="fa fa-search"></i>
+                    <i style="padding: 0 5px;" class="fa fa-bars"></i>
                 </div>
-                <div class="col">
-                    <h1 class="text-center">93%</h1>
-                    <p style="font-size: 30px;">Of successful entrepreneurs say that starting a business young is the most important factor in later success.<br></p>
+                <div>
+                    <h1>A Transformative Education Experience</h1>
+                    <div>
+                        <a href="#">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="right" style="position: relative; height: 100%;">
+                    <i class="fa fa-long-arrow-down" style="position: absolute; bottom: 0;"></i>
                 </div>
             </div>
         </div>
-    </div><img class="img-fluid" src="assets/img/image.png">
+    </div>
+    <div class="text-center">
+        <h1 class="container center" style="font-weight: 750;">Design Thinking courses taught by Stanford entrepreneurs.</h1>
+    </div>
+
+    <div class="container flex-container" style="background-color: #F6EFFF;">
+        <div>
+            <h1 class="center">600+</h1>
+            <p>Immersion alumni all over the world. Many have started companies and gone on to attend top universities.</p>
+        </div>
+        <div>
+            <h1 class="center">#1</h1>
+            <p>Once again, Creativity was listed as the ‘most important soft skill in the workplace’ by LinkedIn (2020).</p>
+        </div>
+        <div>
+            <h1 class="center">93%</h1>
+            <p>Of successful entrepreneurs say that starting a business young is the most important factor in later success.</p>
+        </div>
+    </div>
+
+    <img class="img-fluid" src="assets/img/image.png">
+
+    <!-- Sunday -->
+
     <div style="padding: 100px 0;">
         <div class="container">
             <div class="row">
