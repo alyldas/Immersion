@@ -87,6 +87,15 @@
             color: #6E57FD;
             text-transform: uppercase;
         }
+        
+        .underline:after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 5px;
+            background-color: black;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -162,7 +171,7 @@
     </div>
 
     <div class="container">
-        <h1><span style="border-bottom: 5px solid black;">Take One</span> of Our Classes</h1>
+        <h1>Take One of Our Classes<span class="underline"></span></h1>
     </div>
 
     <div style="background-image: url( 'assets/img/online.png'); background-position: center; width: 100%; height: 100vh; position: relative;">
@@ -179,7 +188,7 @@
     </div>
 
     <div class="container">
-        <h1 class="center">We Have Taught Our Curriculums At The World’s Most Famous Schools</h1>
+        <h1>We Have Taught Our Curriculums At The World’s Most Famous Schools<span class="underline"></span></h1>
 
         <img class="img-fluid" src="assets/img/sponsors.svg">
 
