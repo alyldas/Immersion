@@ -2,259 +2,189 @@
 <html>
 
 <head>
+    <link href="styles/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Immersion</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <style type="text/css">
-        * {
-            font-family: 'Open Sans', sans-serif;
-        }
-        
-        #video {
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-            position: relative;
-        }
-        
-        #video-overlay {
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: white;
-            width: 100%;
-            height: 100vh;
-        }
-        
-        #logo>* {
-            display: inline-block;
-            vertical-align: middle;
-            text-decoration: none;
-            color: white;
-        }
-        
-        #grid {
-            padding: 5%;
-            height: 80%;
-            display: grid;
-            grid-template-columns: 1fr 60px;
-            grid-template-rows: auto 20%;
-            justify-items: stretch;
-            align-items: stretch;
-        }
-        
-        .container {
-            padding: 5% 5%;
-        }
-        
-        .center {
-            text-align: center;
-        }
-        
-        .right {
-            text-align: right;
-        }
-        
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        
-        @media (max-width: 800px) {
-            .flex-container {
-                flex-direction: column;
-                flex: 100%;
-            }
-        }
-        
-        .img-fluid {
-            width: 100%;
-            height: auto;
-        }
-        /* finally */
-        
-        .what-is-link {
-            text-decoration: none;
-            color: #D0D0D0;
-        }
-        
-        .what-is-link-active {
-            color: #6E57FD;
-            text-transform: uppercase;
-        }
-        
-        .underline:after {
-            content: '';
-            display: block;
-            width: 120px;
-            height: 5px;
-            background-color: black;
-            margin-top: 10px;
-        }
+
     </style>
+    <title>Immersion</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <video id="video" src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" autoplay muted loop>
+
+    <!-- Header -->
+
+    <div id="header">
+        <!-- <video id="video" src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" autoplay muted loop>
             Your browser does not support the video tag.
-        </video>
-
+        </video> -->
+        <img class="video img-fullscreen" src="https://via.placeholder.com/1920x1080?text=Video">
         <div id="video-overlay">
-            <div id="grid">
-                <div id="logo">
-                    <a href="#">
-                        <img src="assets/img/logo.svg">
-                    </a>
-                    <a style="padding: 0 5px; font-size: 24px;" href="#">IMMERSION</a>
-                </div>
-                <div class="right">
-                    <a style="padding: 0 5px;" href="#">
-                        <i style="color: white;" class="fa fa-search"></i>
-                    </a>
-                    <a style="padding: 0 5px;" href="#">
-                        <i style="color: white;" class="fa fa-bars"></i>
-                    </a>
-                    <a style="padding: 0 5px; text-decoration: none; color: white;" href="about/index.html">About</a>
-                    <a style="padding: 0 5px; text-decoration: none; color: white;" href="curriculum/index.html">Curriculum</a>
-                    <a style="padding: 0 5px; text-decoration: none; color: white;" href="take-a-class/index.html">Take a Class</a>
-                </div>
-                <div>
-                    <h1>A Transformative Education Experience</h1>
-                    <div>
-                        <a style="color: white; text-decoration: none;" href="#">LEARN MORE</a>
-                    </div>
-                </div>
-                <div class="right" style="position: relative; height: 100%;">
-                    <a style="position: absolute; bottom: 0; color: white;" href="#"><i class="fa fa-long-arrow-down"></i></a>
-                </div>
+            <div id="header-brand">
+                <a id="header-logo" href="/">
+                    <img src="images/logo.svg">
+                </a>
+                <a id="header-title" class="link" href="/">IMMERSION</a>
+            </div>
+            <div id="header-nav">
+                <a href="#">
+                    <img class="icon" src="images/search.svg">
+                </a>
+                <a href="#">
+                    <img class="icon" src="images/bars.svg">
+                </a>
+                <a href="/">Home</a>
+                <a href="take-a-class/index.html">Courses</a>
+                <a href="curriculum/index.html">Curriculum</a>
+                <a href="about/index.html">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div id="heading">
+                <h1>A Transformative Education Experience</h1>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div id="arrow">
+                <img class="icon-32" src="images/long-arrow-alt-down.svg">
             </div>
         </div>
     </div>
+    <!-- Motto -->
 
-    <div>
-        <div style="background-color: #F6EFFF;" class="container center">
-            <h1>Design Thinking courses taught by Stanford entrepreneurs.</h1>
+    <div id="motto" class="container bg-secondary">
+        <h1>Design Thinking courses taught by Stanford entrepreneurs.</h1>
+    </div>
+
+    <!-- Advantages -->
+
+    <div id="advantages" class="container">
+        <div class="advantage">
+            <p class="accent">600+</p>
+            <p>Immersion alumni all over the world. Many have started companies and gone on to attend top universities.</p>
         </div>
-
-        <div class="container flex-container">
-            <div style="padding: 0 5%; flex: 20%;">
-                <p style=" color: #C58EFF; font-size: 3em;" class="center">600+</p>
-                <p>Immersion alumni all over the world. Many have started companies and gone on to attend top universities.</p>
-            </div>
-            <div style="padding: 0 5%; flex: 20%;">
-                <p style="color: #C58EFF; font-size: 3em;" class="center">#1</p>
-                <p>Once again, Creativity was listed as the ‘most important soft skill in the workplace’ by LinkedIn (2020).</p>
-            </div>
-            <div style="padding: 0 5%; flex: 20%;">
-                <p style="color: #C58EFF; font-size: 3em;" class="center">93%</p>
-                <p>Of successful entrepreneurs say that starting a business young is the most important factor in later success.</p>
-            </div>
+        <div class="advantage">
+            <p class="accent">#1</p>
+            <p>Once again, Creativity was listed as the ‘most important soft skill in the workplace’ by LinkedIn (2020).
+            </p>
+        </div>
+        <div class="advantage">
+            <p class="accent">93%</p>
+            <p>Of successful entrepreneurs say that starting a business young is the most important factor in later success.</p>
         </div>
     </div>
 
-    <img class="img-fluid" src="assets/img/image.png">
+    <img class="img-fluid" src="https://via.placeholder.com/1920x1080?text=Immersion">
 
-    <div class="container flex-container">
-        <div style="flex: 25%">
-            <a class="what-is-link what-is-link-active" href="#">What is Immersion?</a></p>
-            <a class="what-is-link" href="#">What Is Design Thinking?</a></p>
-            <a class="what-is-link" href="#">What do our cources involve?</a></p>
+    <!-- What is? -->
+
+    <div id="what-is" class="container">
+        <div>
+            <ul>
+                <li><a class="link active" href="#">What is Immersion?</a></li>
+                <li><a class="link" href="#">What is Design Thinking?</a></li>
+                <li><a class="link" href="#">What do our courses involve?</a></li>
+            </ul>
         </div>
-        <div style="flex: 50%">
-            <p>As the world quickly changes around us, the nature of success is changing too. Social-emotional skills, creativity, and the ability to build real projects are becoming determining factors in non-linear success.</p>
+        <div>
+            <p>As the world quickly changes around us, the nature of success is changing too. Social-emotional skills, creativity, and the ability to build real projects are becoming determining factors in non- linear success.</P>
             <p>That is why we teach Design Thinking, Stanford University’s human-centred approach to foresight and innovation. Design Thinking has birthed some of the world’s most important companies, like Apple, Snapchat, Nike, and more. Most importantly,
                 it gives students confidence, creativity, and collaborative skills to solve complex problems in the real world.</p>
         </div>
     </div>
 
-    <div class="container">
+    <!-- Take One of Our Classes -->
+
+    <div id="take-one-of-our-classes" class="container">
         <h1>Take One of Our Classes<span class="underline"></span></h1>
     </div>
-
-    <div style="background-image: url( 'assets/img/online.png'); background-position: center; width: 100%; height: 100vh; position: relative;">
-        <div style="background-color: rgba(248, 243, 255, 0.5); width: 35%; position: absolute; top: 5%; left: 10%; bottom: 0;" class="container">
-            <p style="font-size: 2.5em">Immersion ONLINE</p>
-            <p>Our Immersion Online class is a week-long Entrepreneurship crash course. Students learn Stanford best practices for innovation, including brainstorming, teamwork, and effective storytelling - all vastly applicable for any aspect oflife.</p>
-            <ul class="fa-ul">
-                <li><i class="fa-li fa fa-clock-o"></i>1 WEEK</li>
-                <li><i class="fa-li fa fa-calendar"></i>SUMMER 2021</li>
-                <li><i class="fa-li fa fa-map-marker"></i>LONDON, EAST COAST, WEST COAST</li>
+    <div id="event">
+        <img class="img-fullscreen" src="https://via.placeholder.com/1920x1080?text=Immersion">
+        <div id="event-content" class="img-overlay">
+            <p>Immersion ONLINE</p>
+            <p>Our Immersion Online class is a week-long Entrepreneurship crash course. Students learn Stanford best practices for innovation, including brainstorming, teamwork, and effective storytelling - all vastly applicable for any aspect of life.</p>
+            <ul>
+                <li><img class="icon-32" src="images/clock.svg"> 1 WEEK</li>
+                <li><img class="icon-32" src="images/calendar-alt.svg"> SUMMER 2021</li>
+                <li><img class="icon-32" src="images/map-marker-alt.svg"> LONDON, EAST COAST, WEST COAST</li>
             </ul>
-            <a style="text-decoration: none; color: black; padding: 20px 60px; border: 2px solid black; position: relative; top: 5%;" href="#">SIGN UP</a>
+            <div class="padding">
+                <a class="btn btn-transparent link" href="#">SIGN UP</a>
+            </div>
         </div>
     </div>
 
-    <div class="container">
+    <!-- Sponsors -->
+
+    <div id="sponsors" class="container">
         <h1>We Have Taught Our Curriculums At The World’s Most Famous Schools<span class="underline"></span></h1>
-
-        <img class="img-fluid" src="assets/img/sponsors.svg">
-
-        <p>We teach a variety of different classes centred around Design Thinking. Our classes are adapted directly from curricula at Stanford University’s Institute of Design and build lifelong skills through iterative design projects.</p>
-        </p>
-        <p>We have also spun out a series of workshops and topic-centric design thinking classes such as ‘Design for Leadership’ and ‘Design for Ethics’. For a demo lecture and curriculum, please use <a href="#">this link.</a></p>
+        <img class="img-fluid padding" src="images/sponsors.svg">
+        <p>All of our classes are adapted directly from curricula at Stanford University’s Institute of Design and build lifelong skills through iterative design projects.</p>
+        <p>We have also spun out a series of workshops and topic-centric design thinking classes such as ‘Design for Leadership’ and ‘Design for Ethics’. For a demo lecture and curriculum, please use <a href="#">this link</a>.</p>
     </div>
 
-    <div class="container flex-container" style="background-color: #F6EFFF;">
-        <div style="flex: 20%; padding: 0 5%;">
+    <!-- Reviews -->
+
+    <div id="reviews" class="container bg-secondary">
+        <div class="review">
             <p>“I loved every second of the summer I spent at Immersion. I feel like I came away having learned a lot about startups and with a new mindset to problem solving. It was really worthwhile.”</p>
-            <p>Dru Reed,</p>
-            <p>Harvard Westlake</p>
+            <p><span>Dru Reed,</span>
+                <span>Harvard Westlake</span></p>
         </div>
-        <div style="flex: 20%; padding: 0 5%;">
-            <p>“The course content was marvelous and participation of the Educators were really appreciable indeed. I will recommend all education lovers to choose Immersion for the effective design thinking education.”</p>
-            <p>Artur Abramov,</p>
-            <p>Letovo School</p>
+        <div class="review">
+            <p>“The course content was marvelous and participation of the Educators were really appreciable indeed. I will recommend all education lovers to choose Immersion for the effective design thinking education.”
+            </p>
+            <p><span>Artur Abramov,</span>
+                <span>Letovo School</span></p>
         </div>
-        <div style="flex: 20%; padding: 0 5%;">
+        <div class="review">
             <p>“The power of learning with different people from across the globe is unstoppable and captivating.”
             </p>
-            <p>Emily Wilson,</p>
-            <p>Eton College</p>
+            <p><span>Emily Wilson,</span>
+                <span>Eton College</span></p>
         </div>
     </div>
 
-    <div style="height: 10vh"></div>
+    <div class="container"></div>
 
-    <div style="background-color: #6E57FD; height: 20vh;" class="container center">
-        <h1 style="color: white;">Take our class and keep the skills forever.</h1>
-        <a style="text-decoration: none; padding: 20px 40px; background-color: white; color: #6E57FD; position: relative; top: 5vh; font-size: 24px;" href="#">Take a Class</a>
-    </div>
+    <!-- Pre-footer -->
 
-    <div style="background-color: #6E57FD;" class="container flex-container">
-        <ul style="flex: 15%; list-style-type: none;">
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">+ 0000 0000 0000</a></li>
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">info@immersion.com</a></li>
-        </ul>
-        <ul style="flex: 15%; list-style-type: none;">
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">Instagram</a></li>
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">YouTube</a></li>
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">LinkedIn</a></li>
-        </ul>
-        <ul style="flex: 15%; list-style-type: none;">
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">PRIVACY POLICY</a></li>
-            <li style="padding: 10px 0;"><a style="text-decoration: none; color: white;" href="#">Terms & Conditions</a></li>
-        </ul>
-        <div style="flex: 20%"></div>
-        <div style="flex: 20%;">
-            <img src="assets/img/footer-logo.svg">
+    <div id="pre-footer" class="container bg-primary center">
+        <h1>Take our class and keep the skills forever.</h1>
+        <div id="take-a-class-btn" class="center padding">
+            <a class="btn btn-white link" href="#">Take a Class</a>
         </div>
     </div>
 
+    <!-- Footer -->
 
-    <script type="text/javascript">
-        function autorun() {
-
-        }
-        if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
-        else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
-        else window.onload = autorun;
-    </script>
+    <div id="footer" class="container bg-primary">
+        <div class="flex-1">
+            <ul>
+                <li><a class="link" href="#">+ 0000 0000 0000</a></li>
+                <li><a class="link" href="#">info@immersion.com</a></li>
+            </ul>
+        </div>
+        <div class="flex-1">
+            <ul>
+                <li><a class="link" href="#">Instagram</a></li>
+                <li><a class="link" href="#">YouTube</a></li>
+                <li><a class="link" href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="flex-1">
+            <ul>
+                <li><a class="link" href="#">PRIVACY POLICY</a></li>
+                <li><a class="link" href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="flex-2"></div>
+        <div class="flex-1">
+            <img src="images/footer-logo.svg">
+        </div>
+    </div>
 </body>
 
 </html>
