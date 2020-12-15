@@ -1,0 +1,304 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/* Responsiveness */
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+ul {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 0.5rem;
+    }
+    .container {
+        padding: 2.5% 5% !important;
+    }
+    .icon-32 {
+        width: 16px !important;
+        height: 16px !important;
+    }
+    .underline:after {
+        width: 120px !important;
+        height: 4px !important;
+    }
+    /* Points */
+    #points {
+        flex-direction: column !important;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    #points .point {
+        text-align: center;
+        width: 100%;
+    }
+    /* Event */
+    #event-content {
+        width: 90% !important;
+        height: 90% !important;
+        left: 5% !important;
+        top: 5% !important;
+    }
+    /* Pre-footer */
+    #pre-footer #take-a-class-btn {
+        margin: 50px 20px;
+    }
+    #pre-footer h1 {
+        padding: 5% 0;
+    }
+    /* Footer */
+    #footer {
+        flex-direction: column !important;
+    }
+    #footer a {
+        font-size: 2rem !important;
+        line-height: 2 !important;
+    }
+    #footer div {
+        margin: 5% 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        padding: 5% 5% !important;
+    }
+    .flex-2 {
+        flex: 1 !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding: 5% 15% !important;
+    }
+    .flex-2 {
+        flex: 2 !important;
+    }
+}
+
+
+/* Tags */
+
+a {
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Classes */
+
+.bg-primary {
+    background-color: #6E57FD;
+    color: white;
+}
+
+.btn {
+    font-size: 2.5rem;
+    padding: 1.5pc 4.5pc;
+}
+
+.btn-white {
+    background-color: white;
+    color: #6E57FD !important;
+}
+
+.btn-transparent {
+    border: 3px solid black;
+    color: black !important;
+    font-size: 1.75rem;
+    padding: 1pc 4pc;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    padding: 5% 15%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+}
+
+.icon-32 {
+    height: 32px;
+    width: 32px;
+}
+
+.img-fluid {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-fullscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.padding {
+    padding: 5% 0;
+}
+
+.point {
+    width: 30%;
+}
+
+.underline:after {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 8px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+
+/* Header */
+
+#header {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content auto;
+    margin: 5% 8%;
+    width: 84%;
+}
+
+#header-brand {
+    display: grid;
+    grid-template-columns: min-content min-content;
+}
+
+#header-brand,
+#header-nav {
+    align-self: center;
+}
+
+#header-title {
+    font-size: 22pt;
+    line-height: 1.625;
+    padding: 0 20px;
+}
+
+#header-nav {
+    text-align: right;
+}
+
+#header-nav .icon {
+    padding: 5px;
+}
+
+
+/* Motto */
+
+#motto p {
+    font-size: 3rem;
+    line-height: 0.5;
+}
+
+
+/* Points */
+
+#points {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+
+/* Benefits */
+
+#benefits h1 {
+    white-space: pre-line;
+}
+
+#benefits li {
+    padding: 10px 0;
+}
+
+
+/* Take One of Our Classes */
+
+#event {
+    position: relative;
+}
+
+#event-content {
+    width: 40%;
+    height: 70%;
+    left: 15%;
+    top: 20%;
+}
+
+#event ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#event li {
+    padding: 10px 0;
+}
+
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#footer a {
+    color: white;
+    font-size: 1rem;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

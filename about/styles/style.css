@@ -1,5 +1,17 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3.125rem;
+}
+
+p {
+    font-size: 1.875rem;
+}
+
+li {
+    font-size: 1.875rem;
 }
 
 .beautiful-switch {
@@ -13,12 +25,19 @@
 .beautiful-switch dd {
     border-left-color: #D0D0D0;
     border-left-style: solid;
-    border-left-width: 2px;
-    padding: 10px;
+    border-left-width: 4px;
+    padding: 0 1.125em;
 }
 
 .beautiful-switch dt {
     padding: 10px;
+}
+
+.beautiful-switch dl,
+.beautiful-switch dt,
+.beautiful-switch dd {
+    font-size: 1.375em;
+    line-height: 3;
 }
 
 body {
@@ -26,7 +45,7 @@ body {
 }
 
 .container {
-    padding: 5% 10%;
+    padding: 10% 15%;
 }
 
 .flex-container {
@@ -44,6 +63,8 @@ body {
 
 .header-content {
     align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
     left: 0;
     margin: 5%;
     position: absolute;
@@ -62,12 +83,26 @@ body {
 }
 
 .header-logo * {
+    color: black;
     display: inline-block;
     vertical-align: middle;
+    text-decoration: none;
+}
+
+.header-title {
+    padding: 10px;
+}
+
+.header-logo a {
+    font-size: 20pt;
 }
 
 .header-nav {
     text-align: right;
+}
+
+.header-nav a {
+    padding: 5px;
 }
 
 .hero {
@@ -103,8 +138,31 @@ body {
 }
 
 @media ( max-width: 800px) {
-    .beautiful-switch {
-        flex-direction: column;
+    html {
+        font-size: 0.5rem;
+    }
+    .container {
+        padding: 10% 5%;
+    }
+    .beautiful-switch dl,
+    .beautiful-switch dt,
+    .beautiful-switch dd {
+        line-height: 2;
+    }
+    .ambassadors-program-img-caption {
+        left: 10% !important;
+        top: 5% !important;
+        width: 80% !important;
+    }
+    .sub-btn {
+        padding-top: 10%;
+    }
+    .beautiful-switch,
+    .footer {
+        flex-direction: column !important;
+    }
+    .footer a {
+        font-size: 2rem;
     }
     .parent {
         display: flex !important;
@@ -147,8 +205,7 @@ body {
 .quotation {
     border-left-color: #000;
     border-left-style: solid;
-    border-left-width: 2px;
-    font-size: 1.5em;
+    border-left-width: 4px;
     font-style: italic;
     margin: 5% 0;
     padding: 0 5%;
@@ -156,4 +213,90 @@ body {
 
 .quotation p {
     margin: 0;
+    font-size: 2.875rem;
+}
+
+.ambassadors-program-img {
+    position: relative;
+}
+
+.ambassadors-program-img-caption {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 35%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ambassadors-program-img-caption p {
+    margin: 0;
+}
+
+.ambassadors-program-img-caption img {
+    width: 32px;
+    height: 32px;
+    padding: 5px 20px;
+}
+
+.btn {
+    margin-top: 10%;
+}
+
+.btn a {
+    border: 3px solid black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 65px;
+}
+
+.sub {
+    background-color: #6E57FD;
+    color: white;
+}
+
+.sub div {
+    text-align: center;
+}
+
+.sub-btn {
+    margin-top: 10%;
+}
+
+.sub-btn a {
+    border: none;
+    color: #6E57FD;
+    background-color: white;
+    font-size: 2.375rem;
+    text-decoration: none;
+    padding: 25px 80px;
+}
+
+.flex-col-1 {
+    flex: 1;
+}
+
+.flex-col-2 {
+    flex: 2;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: #6E57FD;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
 }
