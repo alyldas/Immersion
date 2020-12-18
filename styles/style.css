@@ -200,6 +200,35 @@ body {
 }
 
 
+/* Site menu */
+
+#header-nav-menu {
+    background: white;
+    display: block;
+    left: 60%;
+    height: 100vh;
+    position: fixed;
+    text-align: right;
+    visibility: hidden;
+    width: 40%;
+    z-index: 9;
+}
+
+#header-nav-menu a {
+    text-align: right;
+    text-decoration: none;
+}
+
+#header-nav-menu ul {
+    line-height: 2;
+    list-style: none;
+}
+
+#header-nav-menu .container {
+    padding: 15% !important;
+}
+
+
 /* Header */
 
 #header #video {

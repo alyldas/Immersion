@@ -16,6 +16,23 @@
 
 <body>
 
+    <!-- Site menu -->
+
+    <div id="header-nav-menu">
+        <div class="container">
+            <a href="#">
+                <img class="icon" src="images/times.svg" onclick="document.querySelector('#header-nav-menu').style.visibility = 'hidden'">
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="take-a-class/index.html">Courses</a></li>
+                <li><a href="curriculum/index.html">Curriculum</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Header -->
 
     <div id="header">
@@ -30,7 +47,7 @@
                 <img class="icon" src="images/search.svg">
             </a>
             <a href="#">
-                <img class="icon" src="images/bars.svg">
+                <img class="icon" src="images/bars.svg" onclick="document.querySelector('#header-nav-menu').style.visibility = 'visible'">
             </a>
         </div>
     </div>
